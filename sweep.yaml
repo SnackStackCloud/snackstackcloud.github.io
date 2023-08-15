@@ -1,0 +1,20 @@
+# Sweep AI turns bug fixes & feature requests into code changes (https://sweep.dev)
+# For details on our config file, check out our docs at https://docs.sweep.dev
+
+# If you use this be sure to frequently sync your default branch(main, master) to dev.
+branch: 'main'
+# By default Sweep will read the logs and outputs from your existing Github Actions. To disable this, set this to false.
+gha_enabled: True
+# This is the description of your project. It will be used by sweep when creating PRs. You can tell Sweep what's unique about your project, what frameworks you use, or anything else you want.
+# Here's an example: sweepai/sweep is a python project. The main api endpoints are in sweepai/api.py. Write code that adheres to PEP8.
+description: 'description: "SnackStack.cloud is a comprehensive Vending Machine System (VMS) designed to compete with leading solutions. It includes modules for User Management, Machine Management, Route Management, Product Management, Inventory Management, Warehouse Management, Sales Management, Supplier Management, Inventory Procurement, Site Monitoring & Security, Money Room / Driver Cash Collection, Zapier.com Integration, and Custom Fields & Custom Entities. Built with modern technologies such as Nx, ReactJS, NestJS, Prisma, Apollo, and Auth0. The goal is to offer a seamless and integrated experience for unattended retail operations, emphasizing scalability, security, and flexibility."'
+
+# Default Values: https://github.com/sweepai/sweep/blob/main/sweep.yaml
+docs: { 
+  "githubpages": "https://docs.github.com/en/pages",
+  "reactjs": "https://react.dev/reference/react",
+  "auth0": "https://auth0.com/docs",
+"jekyll": "https://jekyllrb.com/docs",
+"html": "https://www.w3schools.com/html",
+"markdown": "https://www.markdownguide.org/tools/jekyll"
+}
