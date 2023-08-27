@@ -1,0 +1,7 @@
+<svg width="2560" height="1121" xmlns="http://www.w3.org/2000/svg">
+  <!-- lower right triangle-->
+  <polygon points="2560,1280 2560,0 1280,1280" fill="#29297A" />
+
+  <!-- Lower left triangle with opacity -->
+  <polygon points="0,1280 0,891 256,1280" fill="rgba(41, 41, 122, 0.7)" />
+</svg>
