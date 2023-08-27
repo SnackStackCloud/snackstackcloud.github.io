@@ -20,8 +20,7 @@
 
 title: SnackStack.cloud
 email: info@snackstack.cloud
-description: >- # this means to ignore newlines until "baseurl:"
-SnackStack.cloud is a Houston startup building an ecosystem of field and fleet logistics tools for vending machine and micromarket operators in the Lone Star State. Our mission is to help Texas vending operators scale their operations and drive transformative innovation by working with them to build cutting edge \#NoCode integration and automation tools.
+description: "SnackStack.cloud is a Houston startup building an ecosystem of field and fleet logistics tools for vending machine and micromarket operators in the Lone Star State. Our mission is to help Texas vending operators scale their operations and drive transformative innovation by working with them to build cutting edge NoCode integration and automation tools."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.snackstack.cloud" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SnackStackCloud
