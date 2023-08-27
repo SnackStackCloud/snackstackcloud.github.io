@@ -1,0 +1,17 @@
+
+$blue: #29297A;
+$primary: #29297A;
+$secondary: #226fc3;
+$info: #FF3653;
+$red: #db2800;
+$yellow: #ffbc1f;
+$green: #09AC53;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Figtree","Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Create your own map
+$custom-colors: (
+  "radred": #FF3653
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
