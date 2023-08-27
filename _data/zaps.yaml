@@ -1,0 +1,39 @@
+- name: QuickBooks
+  logo: quickbooks.png
+  description: What if your Expenses could automatically appear in Quickbooks?
+
+- name: Google Sheets
+  logo: gsheets.png
+  description: What if the data you need could automatically appear in Google Sheets?
+
+- name: Slack
+  logo: slack.png
+  description: What if you could get notified in Slack when specific things happen?
+
+- name: Webhooks
+  logo: zapwebhooks.png
+  description: What if you could send data to any application that accepts webhooks?
+
+- name: Hubspot
+  logo: hubspot.svg
+  description: What if your VMS contacts could automatically appear in Hubspot?
+
+- name: Salesforce
+  logo: salesforce.svg
+  description: What if your Salesforce customers could automatically appear in your VMS?
+
+- name: Zoho Invoice
+  logo: zi-logo-white.svg
+  description: What if your Invoices could automatically appear in Zoho Invoice?
+
+- name: Twilio
+  logo: twilio.png
+  description: What if your VMS could send SMS messages to your Service Technicians?
+
+- name: Stripe
+  logo: stripe.png
+  description: What if your VMS could automatically charge your customers?
+
+- name: Mailchimp
+  logo: mailchimp.svg
+  description: What if your VMS could automatically connect to Mailchimp?
