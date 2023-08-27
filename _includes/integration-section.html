@@ -1,0 +1,68 @@
+<section class="container-fluid pt-5 bg-primary bg-gradient text-white">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>
+        Your Data, Your Way. Integrate your VMS with over 5,000+ applications
+      </h2>
+      <p>
+        Keep your data consistent across the worlds most popular platforms.
+        Easily integrate with over 5,000+ applications and build workflows which
+        work for you using our no-code Zapier integration.
+      </p>
+    </div>
+</div>
+
+<div class="row p-0 bg-yellow justify-content-center mb-3">
+    <h4 class="h4 w-100 p-2 text-dark text-center">
+      Trusted by 1.8 million businesses, <a href="https://www.zapier.com" class="zapier text-secondary text-bold" target="_blank">Zapier</a> is the easiest way to connect the apps you use everyday.
+    </h4>
+</div>
+
+  <div class="row mx-lg-2 mx-md-1">
+    {% for zap in site.data.zaps %}
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+      <div
+        class="shadow-lg border rounded zapcard card d-flex align-items-start bg-light text-dark m-1 h-100"
+      >
+        <div class="card-body d-flex">
+          <div class="logo-container mr-2">
+            <img
+              src="{{ '/assets/z/' | prepend: site.baseurl }}{{ zap.logo }}"
+              alt="{{ zap.name }} Logo"
+              class="card-img-top logo-img"
+              width="100px"
+            />
+          </div>
+          <div class="ms-3 flex-shrink-1">
+            <h4 class="card-title fw-bold">{{ zap.name }}</h4>
+            <p class="card-text">{{ zap.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- <div class="row row-cols-1 row-cols-md-4 g-3">
+    {% for zap in site.data.zaps %}
+      {% include zap_card.html %}
+    {% endfor %}
+  </div> -->
+  <!-- 
+  <div
+    class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-1 p-0 mx-2"
+  >
+    {% for zap in site.data.zaps %} {% include zap_card.html %} {% endfor %}
+  </div> -->
+
+  <div class="row mt-4 bg-info text-dark p-3 bg-warning text-warning">
+    <div class="col-sm-12 text-center">
+      <!-- Achieve all of this, and more with SnackStack+Zapier -->
+      <h3 class="text-shadow">
+        Achieve all of this, and more with SnackStack + Zapier!
+      </h3>
+          <button class="btn btn-primary btn-lg rounded-pill p-3 mr-2">Contact Us</button>
+          <button class="btn btn-primary btn-lg rounded-pill p-3 ml-2">Schedule a Call</button>
+    </div>
+  </div>
+</section>

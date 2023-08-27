@@ -1,0 +1,99 @@
+<section
+  class="mb-0 border-top border-bottom border-tertiary row flex-lg align-items-center g-5 p-5 shadow-lg"
+  style="
+    max-width: 100vw;
+    min-height: 30rem;
+    background-image: url('/assets/herobg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  "
+>
+  <div class="col-lg-6 col-md-12 col-xs-1 mb-2">
+    <h1 class="display-5 fw-bold lh-1 mb-3">
+      Effortlessly
+      <span class="cta-word text-white bg-primary p-2">Data-Driven</span><br />
+      Vending Management Software
+    </h1>
+    <p class="lead">
+      Simplify your vending operations with our efficient and intuitive software
+      solution. Manage inventory, track sales, and optimize routes with ease. Embrace the power of no-code integration and seamlessly connect your VMS with your preferred platforms, all without the need for complex coding.
+    </p>
+    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg px-4 me-md-2 shadow-md"
+      >
+        Primary
+      </button>
+      <button
+        type="button"
+        class="btn btn-tertiary btn-outline-secondary btn-lg px-4"
+      >
+        Default
+      </button>
+    </div> -->
+  </div>
+  <div class="col-md-12 col-lg-6 my-4">
+    <!-- waitnig list CTA form -->
+    <div class="card m-auto shadow-lg rounded bg-light">
+      <div class="card-body">
+        <h4 class="display-5 fw-bold">Waiting List Newsletter</h4>
+        <p class="lead">
+          Sign up to receive updates on our progress and be the first to know
+          when we launch.
+        </p>
+        <form
+          action="/thank-you"
+          id="newsletter-cta-form"
+          class="newsletter-cta-form"
+        >
+          <input
+            type="email"
+            name="email"
+            class="form-control p-4"
+            placeholder="Email Address"
+          />
+          <input
+            type="submit"
+            value="Join the Waiting List"
+            class="btn btn-primary p-2 mt-4 float-right"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <div class="row bg-tertiary">
+  &nbsp;
+</div> -->
+<!-- 
+<section class="text-center py-5 bg-light">
+  <div class="cta-block">
+    <h1 class="h1"></h1>
+    <div class="cta-description"></div>
+  </div>
+  <button class="btn btn-info">Get Started</button>
+</section> -->
+
+<style>
+  .cta-word {
+    /* min-width: 12ch; */
+    width: 100px;
+    min-height: max-content;
+    text-align: center;
+  }
+</style>
+
+<script>
+  const words = ["Integrated", "Automated", "Customizable", "Data-Driven"];
+  let currentWordIndex = 0;
+  const ctaWord = document.querySelector(".cta-word");
+
+  function changeWord() {
+    ctaWord.textContent = words[currentWordIndex];
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+  }
+
+  setInterval(changeWord, 3500); // Change word every 3.5 seconds
+</script>

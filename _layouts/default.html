@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <!-- Include your CSS files here -->
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body class="p-0 m-0 bg-light">
+  <!-- Include the navigation -->
+  {% include navbar.html %}
+
+  <!-- Page content -->
+  <div class="container-fluid p-0 m-0">
+    {{ content }}
+  </div>
+
+  <!-- Include footer -->
+  <footer class="footer container-fluid text-center py-3 bg-primary bg-gradient">
+    <div class="row mx-1">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h4 class="text-warning h4">Made with <img alt="coffee" src="/assets/mui-coffee.svg" width="24" height="24" /> & <img src="/assets/mui-favoriteicon.svg" width="24" height="24" alt="love" /> in <img src="/assets/Texas_flag_map.svg" alt="Texas" width="24" height="24" /></h4>
+        <img class="img-fluid" src="/assets/TheWoodlandsTexasUS.png" />
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 text-light">
+      <h4 class="text-warning h4">Site Links</h4>
+      <ul class="text-left">
+        <li>
+          <a class="text-light" href="/">Home</a>
+        </li>
+        <!-- <li>
+          <a class="text-light" href="/about-us">About Us</a>
+        </li> -->
+        <li>
+          <a class="text-light" href="/contact-us">Contact Us</a>
+        </li>
+        <!-- <li>
+          <a class="text-light" href="/newsletter">Newsletter</a>
+          </li> -->
+          <li>
+          <a class="text-light" href="/beta-customer-application">Beta Customer Application</a>
+        </li>
+        <!-- <li>
+          <a class="text-light" href="/partner-with-us">Partners</a>
+        </li>
+        <li>
+          <a class="text-light" href="/careers">Careers</a>
+        </li>
+        <li>
+          <a class="text-light" href="/invest">Invest</a>
+          </li>  -->
+      </ul>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 text-light">
+      <h4 class="text-warning h4">Vending Industry Associations</h4>
+      <ul class="text-left">
+        <li>
+          <a class="text-light" href="https://www.namanow.org/" target="_blank">National Automatic Merchandising Association</a>
+        </li>
+        <li>
+          <a class="text-light" href="https://www.tmva.org/" target="_blank">Texas Merchandise Vending Assiociation</a>
+        </li>
+        <li>
+          <a class="text-light" href="https://nbva.org/" target="_blank">National Bulk Vendors Association</a>
+        </li>
+      </ul>
+
+      <h5 class="text-warning h5">Vending Industry Publications</h5>
+      <ul class="text-left">
+      <li>
+        <a class="text-light" href="https://www.vendingmarketwatch.com/" target="_blank">Vending Market Watch</a>
+      </li>
+      <li>
+        <a class="text-light" href="https://www.vendingtimes.com/" target="_blank">Vending Times</a>
+      </li>
+    </ul>
+    </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 text-light p-3">
+        
+        <h4 class="text-light h4" href="/">
+          <!-- <img src="{{ '/assets/logo_400x400.jpg' | relative_url }}" alt="SnackStack.cloud Logo" style="height: 40px"> -->
+          SnackStack
+          <!-- svg cloud icon -->
+          <svg style="vertical-align: top" fill="#fff" width="18" height="18" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloudIcon"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"></path></svg>
+        </h4>
+        <p class="lead text-light text-left">
+          SnackStack.cloud is a Houston startup building an ecosystem of field and fleet logistics tools for vending machine and micromarket operators in the Lone Star State. Our mission is to help Texas vending operators scale their operations and drive transformative innovation by working with them to build cutting edge #NoCode integration and automation tools.
+        </p>
+
+      </div>
+
+  </div>
+    <div class="row p-3 mt-5 justify-content-between border-top border-tertiary">
+      <div class="text-light">
+        &copy; {{ site.time | date: '%Y' }} SnackStack.cloud
+        <!-- <a href="#" class="text-white ml-3 mr-3">Privacy Policy</a>
+        <a href="#" class="text-white mr-3">Terms of Service</a>
+        <a href="/contact-us" class="text-white">Contact Us</a> -->
+      </div>
+      <div class="social text-right mr-3">
+
+        <a href="https://www.linkedin.com/company/snackstack-cloud/" target="_blank">
+          <svg style="vertical-align: top" fill="#fff" width="24" height="24" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkedInIcon"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>
+        </a>
+
+
+        <a href="https://www.facebook.com/snackstackcloud" target="_blank">
+        <svg style="vertical-align: top" fill="#fff" width="24" height="24" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FacebookIcon"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"></path></svg>
+        </a>
+
+        <!-- <svg style="vertical-align: top" fill="#fff" width="24" height="24"  focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GitHubIcon"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path></svg> -->
+        
+
+        <a href="https://twitter.com/snackstackcloud" target="_blank">
+        <svg style="vertical-align: top" fill="#fff" width="24" height="24" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TwitterIcon"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg>
+        </a>
+
+        <a href="https://www.instagram.com/snackstackcloud/">
+        <svg style="vertical-align: top" fill="#fff" width="24" height="24"  focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="InstagramIcon"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+      </a>
+
+    </div>  
+    </div>
+  </footer>
+  {% include hubspot-tracking-code.html %}
+  <!-- Include your JavaScript files here -->
+  <script src="/assets/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
