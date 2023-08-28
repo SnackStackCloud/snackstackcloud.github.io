@@ -4,6 +4,30 @@
   {% include ga-tracking-code.html %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
+  <meta name="author" content="{{ site.author.name }}">
+  
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@snackstackcloud">
+  <meta name="twitter:creator" content="@snackstackcloud">
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+
+  <meta name = “theme-color” content = “#29297A”>
+  <meta name="msapplication-navbutton-color" content="#29297A">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#29297A">
+
+  
   <title>{{ page.title }}</title>
   <!-- Include your CSS files here -->
   <link rel="stylesheet" href="/assets/bootstrap.min.css">
