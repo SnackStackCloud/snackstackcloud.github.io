@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact SnackStack
+image: /assets/snackstack-share-social-img.png
 ---
 <div class="container">
 <div class="card m-4">

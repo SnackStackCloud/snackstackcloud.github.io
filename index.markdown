@@ -5,6 +5,7 @@
 layout: default
 Title: SnackStack.cloud
 permalink: /
+image: /assets/snackstack-share-social-img.png
 ---
 {% include hero-section.html %}
 {% include info-cards-section.html %}
