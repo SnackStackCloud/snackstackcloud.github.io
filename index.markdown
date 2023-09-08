@@ -3,9 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-Title: SnackStack.cloud
+title: Effortlessly Automated Vending Management Software
 permalink: /
 image: /assets/snackstack-share-social-img.png
+description: Easily connect your cashless Point of Sale devices, VMS and MSMS systems to over 5,000 applications with no-code automation.
 ---
 {% include hero-section.html %}
 {% include info-cards-section.html %}
